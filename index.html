@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>My nth webpage</title>
+   </head>
+   <body>
+      <h1>My nth webpage</h1>
+      <h2>What is this</h2>
+      <p>A simple page put together using HTML</p>
+      <h2> Why this is</h2>
+      <ul>
+         <li>To learn HTML</li>
+         <li>To show off
+         <ol>
+            <li>To my boss</li>
+            <li>To my friends</li>
+            <li>To my cat</li>
+            <li>To the little talking duck in my brain</li>
+         </ol>
+        </li>
+        <li>Because I've fallen in love with my computer and want to give her some HTML loving.</li>
+      </ul>
+      <h2>Where to find the tutorial</h2>
+      <p><a href = "http://www.htmldog.com">HTML Dog</a></p>
+      <p>This is my nth webpage</p>
+      <p>How exciting</p>
+      <p>Yep, that really <em>is</em> exciting. <br><br>
+      <strong>Warning:</strong> level of excitement may cause head to explode.
+      </p>
+      <table>
+         <tr>
+            <th>Column 1 heading</th>
+            <th>Column 2 heading</th>
+            <th>Column 3 heading</th>
+         </tr>
+         <tr>
+            <td>Row 2, cell 1</td>
+            <td colspan="2">Row 2, cell 2, also spanning Row 2, cell 3</td>
+         </tr>
+         <tr>
+            <td rowspan="2">Row 3, cell 1, also spanning Row 4, cell 1</td>
+            <td>Row 3, cell 2</td>
+            <td>Row 3, cell 3</td>
+        </tr>
+        <tr>
+           <td>Row 4, cell 2</td>
+           <td>Row 4, cell 3</td>
+        </tr>
+      </table>
+      <form action="contactus.php" method="post">
+      <fieldset>   
+         <legend>Name:</legend>
+         <p>
+            <input type="text" name="name" value="Johann" autofocus>
+         </p>
+      </fieldset>
+         <p>Species:</p>
+         <p>
+            <input name="species">
+         </p>
+         <!-- remember: 'type="text"' isn't actually necessary -->
+         <p>Comments: </p>
+         <p>
+            <textarea name="comments" rows="5" cols="20">Your comments</textarea>
+         </p>
+         <p>Are you:</p>
+         <p>
+            <input type="radio" name="areyou" value="male"> 
+            Male
+         </p>
+         <p>
+            <input type="radio" name="areyou" value="female"> 
+            Female
+         </p>
+         <p>
+            <input type="radio" name="areyou" value="hermaphrodite"> 
+            An hermaphrodite
+         </p>
+         <p>
+            <input type="radio" name="areyou" value="asexual"> 
+            Asexual
+         </p>
+         <label for = "countries">Countries:</label> 
+         <select name="country">
+            <optgroup label="Africa">
+               <option value="gam">Gambia</option>
+               <option value="mad">Madagascar</option>
+               <option value="nam">Namibia</option>
+            </optgroup>
+            <optgroup label="Europe">
+               <option value="fra">France</option>
+               <option value="rus">Russia</option>
+               <option value="uk">UK</option>
+            </optgroup>
+            <optgroup label="North America">
+               <option value="can">Canada</option>
+               <option value="mex">Mexico</option>
+               <option value="usa">USA</option>
+            </optgroup>
+         </select>
+         <p> 
+            <label for = "countries">Countries:</label>
+            <input name="country" list="country_name">
+            <datalist id="country_name">
+               <option value="Afghanistan">
+               <option value="Albania">
+               <option value="Algeria">
+               <option value="Andorra">
+               <option value="Armenia">
+               <option value="Australia">
+               <option value="Austria">
+               <option value="Azerbaijan">
+               <!-- etc. -->
+            </datalist>
+         </p>
+         <p>
+            <label for = "searching">Search:</label>
+            <input type="search" name="search">
+         </p>
+         <p>
+            <label for = "telephone">Telephone Number:</label>
+            <input type="tel" name="telephone_number">
+         </p>
+         <p>
+	    <label for = "URLs">Web Address:</label>
+            <input type="url" name="web_address">
+         </p>
+         <p>
+            <label for = "email">Email:</label>
+            <input type="email" placeholder="you@somewhere.com" name="email_address">
+         </p>
+         <p>
+            <label for = "numbers">Numbers:</label>
+            <input type="number" name="quantity" step="2" min="20" max="30">
+         </p>
+         <p>
+            <label for = "ranges">Range:</label>
+            <input type="range" name="temperature" min="15" max="25" step="0.5" value="18.5">
+         </p>
+         <!-- The following are not supported widely. Also got lazy with labeling -->
+         <p>
+            <label for = "datesandtimes">Date and time:</label>
+            <input type="datetime" name="datetime">
+         </p>
+         <p>
+            <label for = "date">Date:</label>
+            <input type="date" name="date">
+         </p>
+         <p>
+	    <label for = "months">Month:</label>
+            <input type="month" name="month">
+         </p>
+         <p>
+            <label for = "week">Week:</label>
+            <input type="week" name="week">
+         </p>
+         <p>
+            <label for = "time">Time:</label>
+            <input type="time" name="time">
+         </p>
+         <p>
+            <label for = "datetime">Local Date and Time:</label>
+            <input type="datetime-local" name="datetime">
+         </p>
+         <p>
+            <label for = "colors">Color:</label>
+            <input type = "color" name = "color" value = "#ff8800">
+         </p>
+         <p>
+            <input type="submit">
+         </p>
+      </form>
+      <p>This web site is about <abbr title="HyperText Markup Language">HTML</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr>.
+      </p>
+      <p>So I asked Bob about quotations on the Web and he said <q>I know as much about quotations as I do about pigeon fancying</q>. Luckily, I found HTML Dog and it said:
+      </p>
+      <blockquote cite="http://www.htmldog.com/guides/html/intermediate/text/">
+         <p>blockquote and q are used for quotations. blockquote is generally used for standalone often multi-line quotations whereas q is used for shorter, in-line quotations.</p>
+      </blockquote>
+      <figure>
+         <blockquote>[Big old quotation about evolution]</blockquote>
+         <figcaption>Charles Darwin</figcaption>
+      </figure>
+      <p>According to <cite>the Bible</cite>, after six days God said <q>screw this for a lark, I'm having a nap</q>.
+      </p>
+      <p>If you add the line <code><var>givevaderachuckle</var> = true;</code> to the <code>destroy_planet</code> subroutine and then type <kbd>ilovejabba</kbd> into the console, the big bad green Death Star laser will etch <samp>Slug Lover!</samp> on the planet's surface.
+      </p>
+      <pre>
+          <code>
+&lt;div id="intro"&gt;
+    &lt;h1&gt;Some heading&lt;/h1&gt;
+    &lt;p&gt;Some paragraph paragraph thing thing thingy.&lt;/p&gt;
+&lt;/div&gt;
+          </code>
+      </pre>
+      <h2>Some random glossary thing</h2>
+      <dl>
+         <dt>HTML</dt>
+         <dd>Abbreviation for HyperText Markup Language - a language used to make web pages.</dd>
+
+         <dt>Dog</dt>
+         <dd>Any carnivorous animal belonging to the family Canidae.</dd>
+         <dd>The domesticated sub-species of the family Canidae, Canis lupus familiaris.</dd>
+
+         <dt>Moo juice</dt>
+         <dt>Cat beer</dt>
+         <dt>Milk</dt>
+         <dd>A white liquid produced by cows and used for human consumption.</dd>
+      </dl>
+      <h3>Author contact details</h3>
+      <address>
+      <ul>
+         <li>0123-456-7890</li>
+         <li>author_dude@noplaceinteresting.com</li>
+         <li>http://www.noplaceinteresting.com/contactme/</li>
+      </ul>
+      </address>
+      <p>Bob's <dfn title="Dog">canine</dfn> mother and <dfn title="Horse">equine</dfn> father sat him down and carefully explained that he was an <dfn title="A mutation that combines two or more sets of chromosomes from different species">allopolyploid</dfn> organism.
+      </p>
+      <bdo dir="rtl">god lmth</bdo>
+      <p>I have decided to <del datetime="2013-01-26">decrease</del> <ins cite="http://www.icecreamforall.com/changeofpolicy/">increase</ins> the amount of free ice cream that the State will provide for its citizens.
+      </p>
+      <h2>An article</h2>
+      <article>
+         <section id="intro">
+            <p>[An introduction]</p>
+         </section>
+         <section id="main_content">
+            <p>[Content]</p>
+         </section>
+         <section id="related">
+            <ul>
+                <li><a href="that.html">That related article</a></li>
+                <li><a href="this.html">This related article</a></li>
+            </ul>
+         </section>
+      </article>
+      <article>
+         <header>
+            <h1>Alternatively&hellip;</h1>
+            <p>[An introduction]</p>
+         </header>
+         <section id="main_content">
+            <p>[Content]</p>
+         </section>
+         <aside>
+            <h2>Tixall Obelisk</h2>
+            <p>[A short note about Tixall Obelisk]</p>
+         </aside>
+         <p>[Maybe a bit more about Tixall]</p>
+         </section>
+         <footer> <!--- Footer of the article --->
+            <p>[End notes]</p>
+         </footer>
+      </article>
+      <footer> <!--- Footer of the page --->
+         <p>[Copyright bumf]</p>
+      </footer>
+      <figure>
+         <img src="obelisk.jpg">
+         <figcaption>Tixall Obelisk</figcaption>
+      </figure>
+      <nav id="main_nav">
+         <ul>
+            <li><a href="/tutorials/">Tutorials</a></li>
+            <li><a href="/techniques/">Techniques</a></li>
+            <li><a href="/examples/">Examples</a></li>
+            <li><a href="/references/">References</a></li>
+         </ul>
+      </nav>
+      <h2>Advanced tables with column groups</h2>
+      <table>
+         <caption>Locust mating habits</caption>
+         <colgroup>
+            <col>
+            <col span = "2" class="alternative">
+         </colgroup>
+         <tr>
+            <td>This</td>
+            <td>That</td>
+            <td>The other</td>
+         </tr>
+         <tr>
+            <td>Ladybird</td>
+            <td>Locust</td>
+            <td>Lunch</td>
+         </tr>
+      </table>
+      <h2>Another table with head, body, and footer</h2>
+      <table>
+         <thead>
+            <tr>
+                <td>Header 1</td>
+                <td>Header 2</td>
+                <td>Header 3</td>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td>Footer 1</td>
+                <td>Footer 2</td>
+                <td>Footer 3</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+               <td>Cell 1</td>
+               <td>Cell 2</td>
+               <td>Cell 3</td>
+            </tr>
+            <!-- etc. -->
+         </tbody>
+      </table>
+      <h2>Setting order for 'tab'-enabled surfing of links</h2>
+      <ul>
+         <li><a href="here.html" tabindex="1">Here</a></li>
+         <li><a href="there.html" tabindex="3">There</a></li>
+         <li><a href="limbo.html" tabindex="2">Limbo</a></li>
+      </ul>
+      <h2>Link titles</h2>
+      <p>I'm really bad at writing link text. <a href="inept.html" title="Why I'm rubbish at writing link text: An explanation and an apology.">Click here</a> to find out more.
+      </p>
+      <h2>Access keys for keyboard shortcuts [alt + key]</h2>
+      <a href="somepage.html" accesskey="s">Some page</a>	
+   </body>
+</html>
+
